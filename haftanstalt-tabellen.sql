@@ -1,4 +1,3 @@
-
 --
 -- Aufbau der Tabellen für die Haftanstalt
 -- 28.11.12 Mark Bonfert für Gruppe 9
@@ -21,8 +20,8 @@ pause
 CREATE TABLE Person
 	(Vorname 	VARCHAR(20) 	NOT NULL
 	,Nachname 	VARCHAR(20) 	NOT NULL
-	,GebDatum 	Date 		NOT NULL
-	,Z_NR 		number 		NULL
+	,GebDatum 	DATE 		NOT NULL
+	,Z_NR 		NUMBER(4) 		NULL
 	,T_ID 		VARCHAR(1) 	NULL
 	,S_Mass 	VARCHAR(20) 	NULL
 	,F_Mass 	VARCHAR(20) 	NULL
