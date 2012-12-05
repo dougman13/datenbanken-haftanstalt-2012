@@ -20,7 +20,7 @@ CREATE TABLE Person
 	,T_ID 		VARCHAR(1) 	NULL
 	,S_Mass 	VARCHAR(20) 	NULL
 	,F_Mass 	VARCHAR(20) 	NULL
-	,Taetigkeit 	VARCHAR(20) 	NOT NULL		
+	,Taetigkeit 	VARCHAR(20) NULL		
 	,CONSTRAINT 	Person_pk_VNNNGB 	PRIMARY KEY (Vorname,Nachname,GebDatum)
 	)
 	TABLESPACE &tablespace.
