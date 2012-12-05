@@ -123,7 +123,6 @@ INTO Urteil
     VALUES (to_date('25.12.2011', 'dd.mm.yyyy'), 'Mord', 5, 'Jack', 'Ripper', to_date('13.12.1954', 'dd.mm.yyyy'))
 ;INSERT
 INTO	Urteil
-	(Urteilsdatum, Delikt, Jahre, HäftlingVn, HäftlingNN, HäftlingGB)
 VALUES	(to_date('07.03.1978', 'dd.mm.yyyy'), 'Versuchtes Selbstmordattentat', 73, 'Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'))
 ;
 INSERT
