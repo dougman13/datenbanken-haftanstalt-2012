@@ -4,19 +4,14 @@
 --
 --
 set echo on
-set pause =>
 --
 -- Start
 -- =====
 --
-pause
-
 define tablespace = "users"
 -- Tabelle Person
 -- ============
 --
-pause
-
 CREATE TABLE Person
 	(Vorname 	VARCHAR(20) 	NOT NULL
 	,Nachname 	VARCHAR(20) 	NOT NULL
@@ -30,13 +25,10 @@ CREATE TABLE Person
 	)
 	TABLESPACE &tablespace.
 ;
-pause
 --
 -- Tabelle Behandlung
 -- ==================
 --
-pause
-
 CREATE TABLE Behandlung
 	(Medikation 	VARCHAR(20) 	NOT NULL
 	,Krankheit	VARCHAR(20) 	NOT NULL
@@ -50,13 +42,10 @@ CREATE TABLE Behandlung
 	)
 	TABLESPACE &tablespace.
 ;
-pause
 --
 -- Tabelle Urteil
 -- ==============
 --
-pause
-
 CREATE TABLE Urteil
 	(Urteilsdatum 	DATE 		NOT NULL
 	,Delikt 	VARCHAR(20)	NOT NULL
@@ -68,26 +57,20 @@ CREATE TABLE Urteil
 	)
 	TABLESPACE &tablespace.
 ;
-pause
 --
 -- Tabelle Trakt
 -- =============
 --
-pause
-
 CREATE TABLE Trakt
 	(T_ID		VARCHAR(1)	NOT NULL
 	,CONSTRAINT	Trakt_pk	PRIMARY KEY (T_ID)
        )
        TABLESPACE &tablespace.
 ;
-pause
 --
 -- Tabelle Zelle
 -- =============
 --
-pause
-
 CREATE TABLE Zelle
 	(Z_NR		NUMBER(4)	NOT NULL
 	,T_ID		VARCHAR(1)	NOT NULL
@@ -96,12 +79,10 @@ CREATE TABLE Zelle
        )
        TABLESPACE &tablespace.
 ;
-pause
 --
 -- Tabellen Zuordnungen
 -- ====================
 --
-pause
 --
 -- Zuordnungen Person-Tabelle
 -- ==========================
@@ -111,7 +92,6 @@ ALTER TABLE Person ADD
 	(CONSTRAINT 	Person_fk1_T_ID 		FOREIGN KEY (T_ID,Z_NR) REFERENCES Zelle(T_ID,Z_NR)
    )
 ;
-pause
 --
 -- Zuordnungen Behandlung-Tabelle
 -- ==========================
@@ -122,7 +102,6 @@ ALTER TABLE Behandlung ADD
         ,CONSTRAINT      Beh_fk4_Haeftling                FOREIGN KEY (HaeftlingVN,HaeftlingNN,HaeftlingGB) REFERENCES Person(Vorname,Nachname,GebDatum)
         )
 ;
-pause
 --
 -- Zuordnungen Urteil-Tabelle
 -- ==========================
@@ -132,12 +111,10 @@ ALTER TABLE Urteil ADD
 	(CONSTRAINT     urteil_fk1_Haeftling                FOREIGN KEY (HaeftlingVN,HaeftlingNN,HaeftlingGB) REFERENCES Person(Vorname,Nachname,GebDatum)
 	)
 ;
-pause
 --
 -- Zuordnungen Trakt-Tabelle
 -- ==========================
 --
-pause
 --
 -- Zuordnungen Zelle-Tabelle
 -- ==========================
@@ -147,11 +124,6 @@ ALTER TABLE Zelle ADD
 	(CONSTRAINT     Zelle_fk1_T_ID			FOREIGN KEY (T_ID) REFERENCES Trakt(T_ID)
 	)
 ;
-pause
-
-
-
-
 
 -- Ende
 
