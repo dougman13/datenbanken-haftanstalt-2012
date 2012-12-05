@@ -38,10 +38,10 @@ INTO Zelle
 ;
 -- Aufbau der Daten für die Tabelle Person
 -- ====================================
-INSERT 
-INTO Person 
-               (Vorname, Nachname, Geburtsdatum, T_ID, Z_Nr. , S_Mass, F_Mass, Taetigkeit)
-    VALUES ('Jack','Ripper',to_date('13.12.1954', 'dd.mm.yyyy'), 'A', 12, Null, 'Abitur', 'Koch')
+INSERT
+INTO Person
+          (Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
+    VALUES('Jack','Ripper',to_date('13.12.1954','dd.mm.yyyy'),'A',12,NULL,'Abitur','Koch')
 ;
 INSERT 
 INTO Person 
