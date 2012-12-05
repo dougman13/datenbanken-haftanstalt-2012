@@ -68,6 +68,23 @@ INTO Person
 (Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
     VALUES ('Galgen', 'Strick', to_date('10.12.1988','dd.mm.yyyy'),'B', NULL, NULL, NULL, NULL)
 ;
+INSERT
+INTO 	Person
+VALUES 	('Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'), NULL, 13, 'A', NULL, NULL, NULL)
+;
+INSERT
+INTO	Person
+VALUES	('Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'), NULL, 14, 'A', NULL, NULL, 'Wäscherei')
+;
+INSERT
+INTO	Person
+VALUES	('Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'), NULL, 17, 'A', NULL, 'Ausbildung', NULL)
+;
+INSERT
+INTO	Person
+VALUES	('Reiner', 'Weißmann', to_date('11.10.1957', 'dd.mm.yyyy'), NULL, NULL, NULL, NULL, NULL)
+;
+
 -- Aufbau der Daten für die Tabelle Behandlung
 -- =========================================
 INSERT 
@@ -78,6 +95,10 @@ INTO Behandlung
 INSERT 
 INTO Behandlung 
     VALUES ('Asperin','Migraene','Doc', 'Drug', '02.07.1998', 'Bobo', 'Holo',to_date('24.12.1960', 'dd.mm.yyyy'))
+;
+INSERT
+INTO 	Behandlung
+VALUES	('Schmerztabletten', 'Zahnschmerzen', 'Reiner', 'Weißmann', to_date('11.10.1957', 'dd.mm.yyyy'), 'Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'))
 ;
 -- Aufbau der Daten für die Tabelle Urteil
 -- =========================================
@@ -92,6 +113,22 @@ INTO Urteil
 INSERT 
 INTO Urteil
     VALUES (to_date('25.12.2011', 'dd.mm.yyyy'), 'Mord', 5, 'Jack', 'Ripper', to_date('13.12.1954', 'dd.mm.yyyy'))
+;INSERT
+INTO	Urteil
+	(Urteilsdatum, Delikt, Jahre, HäftlingVn, HäftlingNN, HäftlingGB)
+VALUES	(to_date('07.03.1978', 'dd.mm.yyyy'), 'Versuchtes Selbstmordattentat', 73, 'Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'))
+;
+INSERT
+INTO 	Urteil
+VALUES	(to_date('17.10.2010', 'dd.mm.yyyy'), 'Totschlag', 14,'Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'))
+;
+INSERT
+INTO	Urteil
+VALUES	(to_date('27.09.1999', 'dd.mm.yyyy'), 'Bankraub', 3, 'Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'))
+;
+INSERT 
+INTO	Urteil
+VALUES	(to_date('27.09.1999', 'dd.mm.yyyy'), 'Mord', 83, 'Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'))
 ;
 
 COMMIT;
