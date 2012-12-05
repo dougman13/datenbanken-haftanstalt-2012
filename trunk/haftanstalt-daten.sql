@@ -57,11 +57,11 @@ INTO Person
 ;
 INSERT 
 INTO Person
-    VALUES ('Major', 'Tom' to_date('09.07.1978', 'dd.mm.yyyy'), 'A', NULL, NULL, NULL, NULL)
+    VALUES ('Major', 'Tom', to_date('09.07.1978', 'dd.mm.yyyy'), 'A', NULL, NULL, NULL, NULL)
 ;
 INSERT 
 INTO Person
-    VALUES ('Galgen', 'Strick' to_date('10.12.1988', 'dd.mm.yyyy'), 'B', NULL, NULL, NULL, NULL)
+    VALUES ('Galgen', 'Strick', to_date('10.12.1988', 'dd.mm.yyyy'), 'B', NULL, NULL, NULL, NULL)
 ;
 -- Aufbau der Daten für die Tabelle Behandlung
 -- =========================================
