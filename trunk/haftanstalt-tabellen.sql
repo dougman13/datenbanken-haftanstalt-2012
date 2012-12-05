@@ -144,7 +144,7 @@ pause
 --
 
 ALTER TABLE Zelle ADD
-	(CONSTRAINT     Zelle_fk1_T-ID			FOREIGN KEY (T_ID) REFERENCES Trakt(T_ID)
+	(CONSTRAINT     Zelle_fk1_T_ID			FOREIGN KEY (T_ID) REFERENCES Trakt(T_ID)
 	)
 ;
 pause
