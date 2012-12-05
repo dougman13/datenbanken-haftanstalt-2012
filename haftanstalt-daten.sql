@@ -8,29 +8,21 @@
 
 
 set echo on
-set pause =>
-
 --
 -- Start
 -- =====
 --
-pause
-
-
 -- Aufbau der Daten für die Tabelle Trakt
 -- =====================================
-pause
 INSERT INTO Trakt 
         (T_ID)        
     VALUES ('A')
-pause
 ;
 INSERT INTO Trakt
     VALUES ('B')
 ;
 -- Aufbau der Daten für die Tabelle Zelle
 -- ====================================
-pause
 INSERT 
 INTO Zelle
         (Z_Nr, T_ID, Typ)
@@ -46,7 +38,6 @@ INTO Zelle
 ;
 -- Aufbau der Daten für die Tabelle Person
 -- ====================================
-pause
 INSERT 
 INTO Person 
                (Vorname, Nachname, Geburtsdatum, T_ID, Z_Nr. , S_Mass, F_Mass, Taetigkeit)
@@ -74,7 +65,6 @@ INTO Person
 ;
 -- Aufbau der Daten für die Tabelle Behandlung
 -- =========================================
-pause
 INSERT 
 INTO Behandlung 
                (Medikation, Krankheit, ArztVN, ArztNN, ArztGB, HaeftlingVN, HaeftlingNN, HaeftlingGB)
@@ -86,7 +76,6 @@ INTO Behandlung
 ;
 -- Aufbau der Daten für die Tabelle Urteil
 -- =========================================
-pause
 INSERT
 INTO Urteil
         (Urteilsdatum, Delikt, Jahre, HaeftlingVN, HaeftlingNN, HaeftlingGB)
