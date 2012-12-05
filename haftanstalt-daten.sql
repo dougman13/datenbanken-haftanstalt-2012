@@ -45,11 +45,11 @@ INTO Person
 ;
 INSERT 
 INTO Person 
-    VALUES ('Bobo','Holo',to_date('24.12.1960','dd.mm.yyyy'),'B',34, 'Basteln', 'lehre', 'Hausmeister')
+    VALUES ('Bobo','Holo',to_date('24.12.1960','dd.mm.yyyy'),'B',34,'Basteln','lehre','Hausmeister')
 ;
 INSERT 
 INTO Person 
-    VALUES ('Hans','Meiser',to_date('01.11.1975','dd.mm.yyyy'),'A',15, Null, 'Abitur', 'Putzen')
+    VALUES ('Hans','Meiser',to_date('01.11.1975','dd.mm.yyyy'),'A',15,Null,'Abitur','Putzen')
 ;
 INSERT 
 INTO Person
