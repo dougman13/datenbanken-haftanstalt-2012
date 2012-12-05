@@ -36,6 +36,14 @@ INSERT
 INTO Zelle
     VALUES (34, 'B', 'Einzel')
 ;
+INSERT 
+INTO Zelle
+    VALUES(13, 'A', 'Zwei Mann')
+;
+INSERT
+INTO Zelle
+    VALUES(17, 'B', 'Einzel')
+;
 -- Aufbau der Daten für die Tabelle Person
 -- ====================================
 INSERT
@@ -70,15 +78,15 @@ INTO Person
 ;
 INSERT
 INTO 	Person
-VALUES 	('Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'), NULL, 13, 'A', NULL, NULL, NULL)
+VALUES 	('Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'), 'A', '13', NULL, NULL, NULL)
 ;
 INSERT
 INTO	Person
-VALUES	('Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'), NULL, 14, 'A', NULL, NULL, 'Wäscherei')
+VALUES	('Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'), 'A', 13, NULL, NULL, 'Wäscherei')
 ;
 INSERT
 INTO	Person
-VALUES	('Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'), NULL, 17, 'A', NULL, 'Ausbildung', NULL)
+VALUES	('Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'), 'B', 17, NULL, 'Ausbildung', NULL)
 ;
 INSERT
 INTO	Person
