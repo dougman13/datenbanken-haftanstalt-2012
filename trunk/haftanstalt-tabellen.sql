@@ -108,9 +108,8 @@ pause
 --
 
 ALTER TABLE Person ADD 
-	(CONSTRAINT 	Person_fk1_T_ID 		FOREIGN KEY (T_ID) REFERENCES Trakt(T_ID)
-	,CONSTRAINT 	Person_fk2_Z_NR 		FOREIGN KEY (Z_NR) REFERENCES Zelle(T_ID,Z_NR))
-	)
+	(CONSTRAINT 	Person_fk1_T_ID 		FOREIGN KEY (T_ID,Z_NR) REFERENCES Zelle(T_ID,Z_NR)
+   )
 ;
 pause
 --
@@ -119,13 +118,9 @@ pause
 --
 
 ALTER TABLE Behandlung ADD
-	(CONSTRAINT    	 Beh_fk1_Arzt			FOREIGN KEY (ArztVN,ArztNN,ArztGB) REFERENCES Person(Vorname,Nachname,GebDatum)
-	,CONSTRAINT      Beh_fk2_ArztNN			FOREIGN KEY (ArztNN) REFERENCES Person(Vorname,Nachname,GebDatum)
-	,CONSTRAINT      Beh_fk3_ArztGB    		FOREIGN KEY (ArztGB) REFERENCES Person(Vorname,Nachname,GebDatum)
-	,CONSTRAINT      Beh_fk4_HaeftlingVN		FOREIGN KEY (HaeftlingVN) REFERENCES Person(Vorname,Nachname,GebDatum)
-	,CONSTRAINT      Beh_fk5_HaeftlingNN		FOREIGN KEY (HaeftlingNN) REFERENCES Person(Vorname,Nachname,GebDatum)
-	,CONSTRAINT      Beh_fk6_HaeftlingGB    	FOREIGN KEY (HaeftlingGB) REFERENCES Person(Vorname,Nachname,GebDatum)
-	)
+        (CONSTRAINT      Beh_fk1_Arzt                   FOREIGN KEY (ArztVN,ArztNN,ArztGB) REFERENCES Person(Vorname,Nachname,GebDatum)
+        ,CONSTRAINT      Beh_fk4_Haeftling                FOREIGN KEY (HaeftlingVN,HaeftlingNN,HaeftlingGB) REFERENCES Person(Vorname,Nachname,GebDatum)
+        )
 ;
 pause
 --
@@ -134,8 +129,7 @@ pause
 --
 
 ALTER TABLE Urteil ADD
-	(CONSTRAINT 	Person_fk1_T_ID 		FOREIGN KEY (T_ID) REFERENCES Trakt(T_ID)
-	,CONSTRAINT 	Person_fk2_Z_NR 		FOREIGN KEY (ZNR) REFERENCES Zelle(T_ID,Z_NR)
+	(CONSTRAINT     urteil_fk1_Haeftling                FOREIGN KEY (HaeftlingVN,HaeftlingNN,HaeftlingGB) REFERENCES Person(Vorname,Nachname,GebDatum)
 	)
 ;
 pause
