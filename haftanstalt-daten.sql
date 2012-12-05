@@ -45,22 +45,27 @@ INTO Person
 ;
 INSERT 
 INTO Person 
+(Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
     VALUES ('Bobo','Holo',to_date('24.12.1960','dd.mm.yyyy'),'B',34,'Basteln','lehre','Hausmeister')
 ;
 INSERT 
 INTO Person 
+(Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
     VALUES ('Hans','Meiser',to_date('01.11.1975','dd.mm.yyyy'),'A',15,Null,'Abitur','Putzen')
 ;
 INSERT 
 INTO Person
+(Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
     VALUES ('Doc', 'Drug', to_date('02.07.1998','dd.mm.yyyy'), NULL, NULL, NULL, NULL, NULL)
 ;
 INSERT 
 INTO Person
+(Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
     VALUES ('Major', 'Tom', to_date('09.07.1978','dd.mm.yyyy'),'A', NULL, NULL, NULL, NULL)
 ;
 INSERT 
 INTO Person
+(Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
     VALUES ('Galgen', 'Strick', to_date('10.12.1988','dd.mm.yyyy'),'B', NULL, NULL, NULL, NULL)
 ;
 -- Aufbau der Daten für die Tabelle Behandlung
