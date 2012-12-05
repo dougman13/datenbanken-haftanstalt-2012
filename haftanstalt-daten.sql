@@ -45,11 +45,11 @@ INTO Person
 ;
 INSERT 
 INTO Person 
-    VALUES ('Bobo','Holo',to_date('24.12.1960','dd.mm.yyyy'), 'B', 34, 'Basteln', 'lehre', 'Hausmeister')
+    VALUES ('Bobo','Holo',to_date('24.12.1960','dd.mm.yyyy'),'B',34, 'Basteln', 'lehre', 'Hausmeister')
 ;
 INSERT 
 INTO Person 
-    VALUES ('Hans','Meiser',to_date('01.11.1975','dd.mm.yyyy'), 'A', 15, Null, 'Abitur', 'Putzen')
+    VALUES ('Hans','Meiser',to_date('01.11.1975','dd.mm.yyyy'),'A',15, Null, 'Abitur', 'Putzen')
 ;
 INSERT 
 INTO Person
@@ -57,11 +57,11 @@ INTO Person
 ;
 INSERT 
 INTO Person
-    VALUES ('Major', 'Tom', to_date('09.07.1978','dd.mm.yyyy'), 'A', NULL, NULL, NULL, NULL)
+    VALUES ('Major', 'Tom', to_date('09.07.1978','dd.mm.yyyy'),'A', NULL, NULL, NULL, NULL)
 ;
 INSERT 
 INTO Person
-    VALUES ('Galgen', 'Strick', to_date('10.12.1988','dd.mm.yyyy'), 'B', NULL, NULL, NULL, NULL)
+    VALUES ('Galgen', 'Strick', to_date('10.12.1988','dd.mm.yyyy'),'B', NULL, NULL, NULL, NULL)
 ;
 -- Aufbau der Daten für die Tabelle Behandlung
 -- =========================================
