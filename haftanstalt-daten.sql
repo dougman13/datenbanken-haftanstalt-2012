@@ -111,20 +111,20 @@ INTO Person
     VALUES ('Galgen', 'Strick', to_date('10.12.1988','dd.mm.yyyy'),'B', NULL, NULL, NULL, NULL)
 ;
 INSERT
-INTO 	Person
-VALUES 	('Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'), 'A', '13', NULL, NULL, NULL)
+INTO Person
+    VALUES ('Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'), 'A', '13', NULL, NULL, NULL)
 ;
 INSERT
-INTO	Person
-VALUES	('Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'), 'A', 13, NULL, NULL, 'Wäscherei')
+INTO Person
+    VALUES ('Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'), 'A', 13, NULL, NULL, 'Wäscherei')
 ;
 INSERT
-INTO	Person
-VALUES	('Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'), 'B', 17, NULL, 'Lehre', NULL)
+INTO Person
+    VALUES ('Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'), 'B', 17, NULL, 'Lehre', NULL)
 ;
 INSERT
-INTO	Person
-VALUES	('Reiner', 'Weißmann', to_date('11.10.1957', 'dd.mm.yyyy'), NULL, NULL, NULL, NULL, NULL)
+INTO Person
+    VALUES ('Reiner', 'Weißmann', to_date('11.10.1957', 'dd.mm.yyyy'), NULL, NULL, NULL, NULL, NULL)
 ;
 
 -- Aufbau der Daten für die Tabelle Behandlung
@@ -191,7 +191,7 @@ INTO Urteil
 ;
 INSERT
 INTO	Urteil
-VALUES	(to_date('07.03.1978', 'dd.mm.yyyy'), 'Versuchtes Selbstmordattentat', 73, 'Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'))
+VALUES	(to_date('07.03.1978', 'dd.mm.yyyy'), 'Massenmord', 73, 'Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'))
 ;
 INSERT
 INTO 	Urteil
