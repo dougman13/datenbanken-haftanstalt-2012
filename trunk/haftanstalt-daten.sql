@@ -21,8 +21,7 @@ INSERT INTO Trakt
 INSERT INTO Trakt
     VALUES ('B')
 ;
-INSERT
-INTO TRAKT
+INSERT INTO Trakt
     VALUES ('C')
 ;
 -- Aufbau der Daten für die Tabelle Zelle
