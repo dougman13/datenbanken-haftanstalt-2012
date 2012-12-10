@@ -45,20 +45,20 @@ INTO Zelle
 ;
 INSERT 
 INTO Zelle
-    VALUES(13, 'A', 'Zwei Mann')
+    VALUES (13, 'A', 'Zwei Mann')
 ;
 INSERT
 INTO Zelle
-    VALUES(17, 'B', 'Einzel')
+    VALUES (17, 'B', 'Einzel')
 ;
 
 INSERT
 INTO Zelle
-    VALUES(13, 'B', 'Zwei Mann')
+    VALUES (13, 'B', 'Zwei Mann')
 ;
 INSERT
 INTO Zelle
-    VALUES(6, 'A', 'Einzel')
+    VALUES (6, 'A', 'Einzel')
 ;
 
 -- Aufbau der Daten für die Tabelle Person
@@ -66,27 +66,27 @@ INTO Zelle
 INSERT
 INTO Person
           (Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
-    VALUES('Jack','Ripper',to_date('13.12.1954','dd.mm.yyyy'),'A',12,NULL,'Abitur','Koch')
+    VALUES ('Jack','Ripper',to_date('13.12.1954','dd.mm.yyyy'),'A',12,NULL,'Abitur','Koch')
 ;
 INSERT
 INTO Person
 (Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
-    VALUES('The', 'Beast', to_date('02.05.1302', 'dd.mm.yyyy'), 'C', 1, NULL, NULL, NULL)
+    VALUES ('The', 'Beast', to_date('02.05.1302', 'dd.mm.yyyy'), 'C', 1, NULL, NULL, NULL)
 ;
 INSERT
 INTO Person
 (Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
-    VALUES('James', 'Bluefield', to_date('04.02.1930', 'dd.mm.yyyy'), 'A', 6, NULL, 'Abitur', 'Koch')
+    VALUES ('James', 'Bluefield', to_date('04.02.1930', 'dd.mm.yyyy'), 'A', 6, NULL, 'Abitur', 'Koch')
 ;
 INSERT
 INTO Person
 (Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
-    VALUES('Jules', 'Eindorn', to_date('01.01.1980','dd.mm.yyyy'), 'B', 13, NULL, 'Lehre', 'Putzen')
+    VALUES ('Jules', 'Eindorn', to_date('01.01.1980','dd.mm.yyyy'), 'B', 13, NULL, 'Lehre', 'Putzen')
 ;
 INSERT
 INTO Person
 (Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
-    VALUES('Lui', 'Cypher', to_date('13.06.1966', 'dd.mm.yyyy'), 'B', 13, NULL, NULL, 'Buchhaltung')
+    VALUES ('Lui', 'Cypher', to_date('13.06.1966', 'dd.mm.yyyy'), 'B', 13, NULL, NULL, 'Buchhaltung')
 ;
 INSERT 
 INTO Person 
@@ -150,8 +150,8 @@ INTO Behandlung
     VALUES ('Schmerztabletten','Migraene','Doc', 'Drug', to_date('02.07.1998', 'dd.mm.yyyy'), 'Bobo', 'Holo',to_date('24.12.1960', 'dd.mm.yyyy'))
 ;
 INSERT
-INTO  Behandlung
-    VALUES	('Schmerztabletten', 'Zahnschmerzen', 'Reiner', 'Weißmann', to_date('11.10.1957', 'dd.mm.yyyy'), 'Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'))
+INTO Behandlung
+    VALUES ('Schmerztabletten', 'Zahnschmerzen', 'Reiner', 'Weißmann', to_date('11.10.1957', 'dd.mm.yyyy'), 'Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'))
 ;
 -- Aufbau der Daten für die Tabelle Urteil
 -- =========================================
@@ -173,7 +173,7 @@ INTO Urteil
 INSERT
 INTO Urteil
 (Urteilsdatum, Delikt, Jahre, HaeftlingVN, HaeftlingNN, HaeftlingGB)
-    VALUES(to_date('09.09.2009', 'dd.mm.yyyy'), 'Mord', 5, 'James', 'Bluefield', to_date('04.02.1930', 'dd.mm.yyyy'))
+    VALUES (to_date('09.09.2009', 'dd.mm.yyyy'), 'Mord', 5, 'James', 'Bluefield', to_date('04.02.1930', 'dd.mm.yyyy'))
 ;
 INSERT
 INTO Urteil
@@ -208,22 +208,22 @@ INTO Urteil
 INSERT
 INTO Urteil
 (Urteilsdatum, Delikt, Jahre, HaeftlingVN, HaeftlingNN, HaeftlingGB)
-    VALUES  (to_date('07.03.1978', 'dd.mm.yyyy'), 'Massenmord', 73, 'Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'))
+    VALUES (to_date('07.03.1978', 'dd.mm.yyyy'), 'Massenmord', 73, 'Gert', 'Grynthal', to_date('13.03.1958', 'dd.mm.yyyy'))
 ;
 INSERT
-INTO  Urteil
+INTO Urteil
 (Urteilsdatum, Delikt, Jahre, HaeftlingVN, HaeftlingNN, HaeftlingGB)
     VALUES (to_date('17.10.2010', 'dd.mm.yyyy'), 'Totschlag', 14,'Bardal', 'Oxnholz', to_date('09.12.1987', 'dd.mm.yyyy'))
 ;
 INSERT
-INTO  Urteil
+INTO Urteil
 (Urteilsdatum, Delikt, Jahre, HaeftlingVN, HaeftlingNN, HaeftlingGB)
     VALUES (to_date('27.09.1999', 'dd.mm.yyyy'), 'Raub', 3, 'Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'))
 ;
 INSERT 
-INTO  Urteil
+INTO Urteil
 (Urteilsdatum, Delikt, Jahre, HaeftlingVN, HaeftlingNN, HaeftlingGB)
-    VALUES  (to_date('27.09.1999', 'dd.mm.yyyy'), 'Mord', 83, 'Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'))
+    VALUES (to_date('27.09.1999', 'dd.mm.yyyy'), 'Mord', 83, 'Phyl', 'Delbens', to_date('02.08.1977', 'dd.mm.yyyy'))
 ;
 
 COMMIT;
