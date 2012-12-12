@@ -72,4 +72,23 @@ pause
 -- Richard's "Komplizierte" abfrage...
 -- =================================
 --
+-- Es soll eine Datenmenge für eine Statistik über den Zusammenhang von Fortbildungsmaßnahmen und Haftdauer
+-- fuer jeden Delikt erstellt werden
+
+SELECT DISTINCT u.Delikt, q1.avgjahre, q1.countperson, q2.taetigkeiten
+FROM Urteil u
+INNER JOIN (
+	SELECT u1.Delikt, COUNT(*) countperson, AVG(u1.Jahre) avgjahre
+	FROM Urteil u1
+	GROUP BY u1.Delikt
+) q1
+ON (u.Delikt = q1.Delikt)
+INNER JOIN (
+	SELECT u2.Delikt, COUNT(p.S_Mass) + COUNT(p.F_Mass) + COUNT(p.Taetigkeit) taetigkeiten
+	FROM Urteil u2
+	LEFT OUTER JOIN Person p
+	ON (p.Vorname = u2.HaeftlingVN AND p.Nachname = u2.HaeftlingNN AND p.GebDatum = u2.HaeftlingGB)
+	GROUP BY u2.Delikt
+) q2
+ON (u.Delikt = q2.Delikt);
 pause
