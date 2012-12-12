@@ -183,7 +183,7 @@ INTO Urteil
 INSERT
 INTO Urteil
 (Urteilsdatum, Delikt, Jahre, HaeftlingVN, HaeftlingNN, HaeftlingGB)
-    VALUES (to_date('11.09.1980', 'dd.mm.yyyy'), 'Hochverrat', 107, 'Lui', 'Cypher', to_date('13.06.1966', 'dd.mm.yyyy'))
+    VALUES (to_date('11.09.1980', 'dd.mm.yyyy'), 'Hochverrat', 71, 'Lui', 'Cypher', to_date('13.06.1966', 'dd.mm.yyyy'))
 ;
 INSERT
 INTO Urteil
