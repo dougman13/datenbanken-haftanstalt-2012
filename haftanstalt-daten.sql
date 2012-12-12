@@ -26,6 +26,7 @@ INSERT INTO Trakt
 ;
 -- Aufbau der Daten für die Tabelle Zelle
 -- ====================================
+pause
 INSERT 
 INTO Zelle
         (Z_Nr, T_ID, Typ)
@@ -63,6 +64,7 @@ INTO Zelle
 
 -- Aufbau der Daten für die Tabelle Person
 -- ====================================
+pause
 INSERT
 INTO Person
           (Vorname,Nachname,Gebdatum,T_ID, Z_Nr,S_Mass,F_Mass,Taetigkeit)
@@ -136,6 +138,7 @@ INTO Person
 
 -- Aufbau der Daten für die Tabelle Behandlung
 -- =========================================
+pause
 INSERT 
 INTO Behandlung 
                (Medikation, Krankheit, ArztVN, ArztNN, ArztGB, HaeftlingVN, HaeftlingNN, HaeftlingGB)
