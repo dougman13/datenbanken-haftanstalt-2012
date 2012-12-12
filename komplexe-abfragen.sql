@@ -38,16 +38,14 @@ und behandelten Arzt,
 -- mit den dazugehörigen Wärtern alphabetisch nach vn geordnet
 
 
-SELECT p.vorname AS haeftvorname, p.nachname AS haeftnachname,
-b.krankheit, p.t_id, b.arztvn, t.waerterVN, t.waerterNN
-FROM (SELECT h.vorname, h.nachname, h.gebdatum, h.t_id FROM person h
-WHERE h.z_nr IS NOT NULL AND h.t_id IS NOT NULL) p
-LEFT JOIN Behandlung b
-ON (p.vorname = b.haeftlingvn AND p.nachname = b.haeftlingnn AND
-p.gebdatum = b.haeftlinggb)
+SELECT p.vorname AS haeftvorname, p.nachname AS haeftnachname, b.krankheit, p.t_id, b.arztvn, t.waerterVN, t.waerterNN
+FROM (SELECT h.vorname, h.nachname, h.gebdatum, h.t_id 
+      FROM person h
+      WHERE h.z_nr IS NOT NULL AND h.t_id IS NOT NULL) AS p
+LEFT JOIN Behandlung b ON (p.vorname = b.haeftlingvn AND p.nachname = b.haeftlingnn AND p.gebdatum = b.haeftlinggb)
 JOIN (SELECT w.vorname AS WaerterVN, w.nachname AS WaerterNN, w.t_id
-FROM person w WHERE w.z_nr IS NULL AND w.t_id is NOT NULL) t
-ON t.t_id = p.t_id
+      FROM person w WHERE w.z_nr IS NULL AND w.t_id is NOT NULL) AS t
+      ON t.t_id = p.t_id
 WHERE p.vorname IN (SELECT a.vorname FROM person a WHERE a.t_id = 'A')
 ;
 pause
