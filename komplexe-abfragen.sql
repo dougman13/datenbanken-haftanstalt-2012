@@ -29,11 +29,16 @@ ORDER BY t.T_ID
 --A         99             5
 --B        211             4
 --C         92             1
+pause
 -- Bartosch's "Komplizierte" abfrage...
 -- =================================
 --
+pause
 -- Ralf's "Komplizierte" abfrage...
 -- =================================
 --
+pause
 -- Richard's "Komplizierte" abfrage...
 -- =================================
+--
+pause
